@@ -33,24 +33,21 @@ p{
     font-size: small;
 }
 
-
 .join{
     justify-content: center;
     position:relative;
-    border: 3px white;
-    display:block;
-    left: 60%;
-    justify-content: center;
+    display:flexbox;
+    float: right;
 }
 
 .buttons{
     padding: 12px 32px;
+    justify-content: center;
     text-align: center;
     border-radius: 30px;
     width: 300px;
-    margin: 2px;
+    margin: 3px;
     position: relative;
-    text-align: center;
 }
 
 #create{
@@ -64,33 +61,29 @@ p{
     border-color: rgb(255, 245, 99);
 }
 
-#img1 {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    margin: 2rem auto;
+.main{
+    justify-content: center;
+    display: flex;
+    position: relative;
+    top:50px;
+}
+.img1 {
+    width: 60%;
+    position: relative;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    float: left;
 }
 
 @media screen and (max-width: 600px) {
 
-    .join{
-        text-align: left;
-        justify-content: left;
-    }
-    h1 {
-        font-size: 2rem;
+    .main{
+        text-align: center;
+        justify-content: center;
     }
 
-    h2 {
-        font-size: 1.2rem;
-    }
-
-    .buttons {
-        font-size: 0.9rem;
-        padding: 10px 20px;
-    }
-
-    p {
-        font-size: 0.7rem;
+    .img1{
+        width: 2rem auto;
     }
 }
