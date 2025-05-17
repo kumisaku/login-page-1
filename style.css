@@ -33,11 +33,35 @@ p{
     font-size: small;
 }
 
+.main{
+    justify-content: center;
+    display: flex;
+    position: relative;
+    top:50px;
+}
+.img1 {
+    width: 60%;
+    position: relative;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    float: left;
+}
+
+.bat-logo{
+    width: 100%;
+    height: auto;
+    max-width: 65%; /* Or any size you prefer on desktop */
+    display: block;
+}
+
 .join{
     justify-content: center;
     position:relative;
-    display:flexbox;
+    display:flex;
+    flex-direction: column;
     float: right;
+    flex-wrap: wrap;
 }
 
 .buttons{
@@ -61,29 +85,32 @@ p{
     border-color: rgb(255, 245, 99);
 }
 
-.main{
-    justify-content: center;
-    display: flex;
-    position: relative;
-    top:50px;
-}
-.img1 {
-    width: 60%;
-    position: relative;
-    display: flex;
-    justify-content: center ;
-    align-items: center;
-    float: left;
-}
+
 
 @media screen and (max-width: 600px) {
 
     .main{
+        display: block;
         text-align: center;
         justify-content: center;
+        padding:20%;
     }
 
     .img1{
-        width: 2rem auto;
+        height: auto;
+        display:flex;
+        flex-direction: column;
+        float:none;
+        margin:0 auto;
+    }
+
+    .bat-logo{
+        width: 200%;
+        max-width: 500px;
+    }
+
+    .join{
+        display: flex;
+        flex-direction: column;
     }
 }
